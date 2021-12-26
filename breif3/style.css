@@ -1,0 +1,419 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(238, 238, 238);
+  background-image: url(images/pexels-nikaff-950738.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  height: 16px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links {
+  margin-right: 150px;
+}
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+  text-transform: uppercase;
+}
+.nav-links ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 13px;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1 {
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+}
+
+.titre {
+  font-size: 30px;
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+  text-align: center;
+}
+.services {
+  background-color: rgb(248, 246, 246);
+  height: 67vh;
+}
+.Offers {
+  display: flex;
+  /* grid-template-columns: min-content 1fr; */
+  /* width: 19%; */
+  /* margin-left: 25px; */
+  /* margin-top: 40px; */
+  /* border: 2px solid red; */
+}
+
+.textt {
+  margin-left: 20px;
+}
+.text1 {
+  width: 90%;
+}
+.trust-secion {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
+  height: 400px;
+  justify-content: center;
+  justify-content: space-around;
+}
+.trust {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.safty {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/222.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.safty div > h3 {
+  font-size: 60px;
+  width: 100%;
+  color: #facd3d;
+  background-color: rgb(188 192 191 / 60%);
+  text-align: center;
+}
+footer {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.social-media ul li i {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  /* margin-right: 5px; */
+  border-radius: 50px;
+  text-align: center;
+  align-items: center;
+  font-size: 19px;
+  background-color: #cac5c542;
+  transition: all 0.3s ease;
+}
+.social-media ul li i:hover {
+  background: #d49292;
+}
+.social-media ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.comments {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  /* border: 2px solid red; */
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.comments-img img {
+  border-radius: 50%;
+  height: 80px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  width: 80px;
+}
+.comments-header h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: rgba(238, 236, 236, 0.274);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.comments-container:hover {
+  /* On mouse-over, add a deeper shadow */
+  box-shadow: 0 8px 16px 0 rgba(250, 250, 250, 0.432);
+}
+
+.cc-title > h3 {
+  text-align: center;
+}
+.comments-text > p {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .Offers {
+    display: block;
+  }
+  .loto {
+    align-content: center;
+    width: 100vw;
+    /* border: 2px solid red; */
+    /* overflow: hidden; */
+  }
+  .loto > img {
+    width: 100%;
+  }
+  .textt {
+    font-size: 11px;
+  }
+
+  .safty div h3 {
+    font-size: 20px;
+  }
+  nav {
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-links {
+    margin-right: 0px;
+  }
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .nav-links ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 0px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+  .services {
+    height: 100vh;
+  }
+  .comments {
+    width: 80%;
+    margin-bottom: 19px;
+  }
+  .comments-container {
+    margin-bottom: 19px;
+    padding: 10px;
+  }
+  .trust-secion {
+    flex-direction: column;
+  }
+}
+
+/* PAGE-CONTACT-US */
+
+.header-contact {
+  background-image: url(images/toyotaLandCruiserv82015exteriortme001bfull_tcm3046565874.jpg);
+  min-height: 70vh;
+  width: 100%;
+  background-color: rgb(238, 238, 238);
+  background-size: cover;
+  background-position: center;
+}
+.contactus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-contact {
+  margin: 30px;
+  padding: 30px;
+  background-color: rgba(238, 236, 236, 0.274);
+  width: 70%;
+  /* height: 10%; */
+  display: block;
+
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.container-contact:hover {
+  /* On mouse-over, add a deeper shadow */
+  box-shadow: 0 8px 16px 0 rgba(250, 250, 250, 0.432);
+}
+
+.container-contact .inputt3mar input {
+  background-color: transparent;
+  width: 100%;
+  resize: none;
+  padding: 5px 0;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+}
+.container-contact .inputt3mar #phone {
+  display: flex;
+  margin-left: 10px;
+}
+.container-contact select {
+  background-color: transparent;
+  font-size: 18px;
+  border: 0;
+  border-bottom: 1px solid #777;
+  outline: 0;
+  margin-top: 19px;
+  width: 19%;
+  -webkit-appearance: none;
+  margin-left: 10px;
+}
+select:invalid {
+  color: #777;
+}
+.container-contact textarea {
+  height: 70px;
+  background-color: transparent;
+  width: 100%;
+  resize: none;
+  padding: 5px 0;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+}
+.container-contact .inputS input[type="submit"] {
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  background: #ff8888;
+  color: #fff;
+  border: none;
+  width: 150px;
+  padding: 12px;
+}
+.container-contact .inputS input[type="submit"]:hover {
+  background: #ff7979;
+}
+
+
+
+
+
+/* gallerie */
+.te7t-hero{
+  
+  width: 58%;
+  margin: auto;
+  padding-top: 80PX;
+  text-align: center;
+  
+  /* padding-top: 10px; */
+}
+h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.card{
+  border: 2px solid red;
+
+  display: flex;
+  margin-bottom: 30px;
+}
+/* .card { */
+  /* Add shadows to create the "card" effect */
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+} */
+
+/* On mouse-over, add a deeper shadow */
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+} */
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+  }
+.card > img{
+    height: 20%;
+    width: 50%;
+}
+.card p{
+  color: #777;
+  width: 100%;
+  border: 2px solid red;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  /* padding: 10px; */
+  text-align: start;
+}
+
+
