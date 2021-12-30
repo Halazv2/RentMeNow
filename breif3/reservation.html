@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RentMeNow | Home</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+        rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+        <script src="https://kit.fontawesome.com/3d49ef96c0.js" crossorigin="anonymous"
+        ></script>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"
+        />
+</head>
+<body>
+    <header class="nav-barrr">
+        <nav>
+          <a class="logo" href="brief.html"
+            ><img src="images/logo.png" width="50 px" height="50 px"
+          /></a>
+          <div class="nav-links">
+            <ul>
+              <li>
+                <a href="home.html">Home</a>
+              </li>
+              <li>
+                <a href="gallerie.html">Gallerie</a>
+              </li>
+              <li><a href="reservation.html"><b>Réservation</b></a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <section class="header-r">
+          <div class="text-r">
+            <h3>BOOK ONLINE FOR THE BEST RATE WITH <span>RentMeNow !</span> </h3>
+        </div>
+        <div class="booking-pod">
+          <div class="vehcle-container">
+              
+           <div class="vehcle-option">
+             <div class="input">
+
+              <input type="text" id="fname" name="First name" placeholder="First Name" required/><br />
+              <input type="text" id="lname" name="Last name" placeholder="Last Name" required/><br/>
+              <input id="phone" type="tel" name="phone" placeholder="phone number" /><br/>
+              <input type="email" name="email" placeholder="exemple@exmp.com" required />
+              <div class="date">
+                <div>
+                  <label for="">pick up date</label>
+                  <input type="date" name="date" id="pickup">
+                </div>
+                <div>
+                  <label for="">Return date</label>
+                  <input type="date" name="date" id="return">
+                </div>
+              </div>
+            </div>
+            <div class="wtov">
+              <select name="vehcel-type" id="vehcel-type" value="#" required>
+                <option value="" disabled selected hidden>manuelle\automatique</option>
+                <option value="Casablanca">manuelle</option>
+                <option value="Rabat">automatique (+19%)</option>
+              </select>
+              <select name="vehcle" id="vehcle" value="vehcle" required>
+                        <option value="" disabled selected hidden>vehcle type</option>
+                        <option value="moto">moto(10$/day)</option>
+                        <option value="citadine">citadine(12$/day)</option>
+                        <option value="compact">compact(14$/day)</option>
+                        <option value="berline">berline(20$/day)</option>
+                        <option value="utilitaire">utilitaire(16$/day)</option>
+                        <option value="engin-de-chatier">engin de chatier(900$/day)</option>
+                        <option value="camion">camion(250$/day)</option>
+                      </select>
+                      <select name="city" id="city" value="city" required>
+                        <option value="" disabled selected hidden>Essence</option>
+                        <option value="Casablanca">Electrique(+5%)</option>
+                        <option value="Rabat">Hybride(+9%)</option>
+                        <option value="Oujda">Essence(+14%)</option>
+                        <option value="Safi">Diesel(+21%)</option>
+                      </select>
+
+                    </div><br/>
+                    <div class="inputS">
+                      <input type="submit"  id="send"/>
+                    </div>
+               </div>   
+           </div>
+        </div>
+      </section>  
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+      <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+          utilsScript:
+            "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+      </script>
+</body>
+</html>

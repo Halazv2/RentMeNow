@@ -122,7 +122,7 @@ nav {
 .safty div > h3 {
   font-size: 60px;
   width: 100%;
-  color: #facd3d;
+  color: #ff7979;
   background-color: rgb(188 192 191 / 60%);
   text-align: center;
 }
@@ -271,6 +271,7 @@ footer {
   }
   .trust-secion {
     flex-direction: column;
+    height: 100%;
   }
 }
 
@@ -348,72 +349,256 @@ select:invalid {
   outline: none;
   border-bottom: 1px solid #777;
 }
-.container-contact .inputS input[type="submit"] {
-  position: relative;
+.inputS input[type="submit"] {
+  width: 30%;
+  outline: none;
+  padding: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #ff7979;
+  text-transform: uppercase;
+  border: 2px solid #ff7979;
   cursor: pointer;
-  font-size: 16px;
-  background: #ff8888;
-  color: #fff;
-  border: none;
-  width: 150px;
-  padding: 12px;
+  transition: all 0.3s ease;
 }
-.container-contact .inputS input[type="submit"]:hover {
+.inputS input[type="submit"]:hover {
+  color: #fff;
   background: #ff7979;
 }
 
-
-
-
-
 /* gallerie */
-.te7t-hero{
-  
-  width: 58%;
-  margin: auto;
-  padding-top: 80PX;
+
+.hero-g {
+  background-image: url(images/business-rentals-header-hero-emea-3.jpg);
+  background-repeat: no-repeat;
+  padding-top: 600px;
+  position: relative;
+}
+/* .gg {
+  width: 629px;
+  background-color: rgb(255, 255, 255);
+  top: 63%;
+  left: 19%;
+  transform: translate(-23%, -90%);
+  padding: 20px;
+}
+.gg h3{
+  font-size: 30px;
   text-align: center;
-  
-  /* padding-top: 10px; */
-}
-h1{
-  font-size: 36px;
-  font-weight: 600;
-}
-.card{
-  border: 2px solid red;
-
+} */
+.parent {
+  top: 52%;
+  right: 20%;
+  position: absolute;
   display: flex;
-  margin-bottom: 30px;
+  text-align: center;
+  justify-content: center;
+  justify-content: space-around;
 }
-/* .card { */
-  /* Add shadows to create the "card" effect */
-  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-} */
-
-/* On mouse-over, add a deeper shadow */
-/* .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-} */
-
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
-  }
-.card > img{
-    height: 20%;
-    width: 50%;
-}
-.card p{
+.one,
+.two,
+.three {
+  width: 30%;
   color: #777;
-  width: 100%;
-  border: 2px solid red;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  /* padding: 10px; */
-  text-align: start;
+}
+.fa-smile-wink,
+.fa-heart,
+.fa-car:before {
+  color: rgb(147, 180, 147);
+}
+.parent h4 {
+  color: black;
 }
 
+.titilo {
+  text-align: center;
+  /* margin-top: 10px;  */
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.titelmini {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ff7979;
+  color: #fff;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .card {
+  margin: 20px;
+  padding: 0 20px 20px;
+  background-color: rgb(243, 243, 243);
+}
+.wrapper .card img {
+  height: 250px;
+  width: 400px;
+}
+.wrapper .card:hover {
+  box-shadow: 0 0 2px 1px #e4e4e480;
+}
+.wrapper .card img:hover {
+  transform: scale(1.1);
+}
+.wrapper .content .row {
+  /* border:1px solid red ; */
+  display: flex;
+  justify-content: space-between;
+}
+.content .row .details span {
+  font-size: 22px;
+  font-weight: 500;
+}
 
+.content .row .details p {
+  font-size: 17px;
+  font-weight: 400;
+  color: rgb(92, 92, 92);
+}
+.button {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button button {
+  width: 30%;
+  outline: none;
+  padding: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #ff7979;
+  text-transform: uppercase;
+  border: 2px solid #ff7979;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button button:hover {
+  color: #fff;
+  background: #ff7979;
+}
+.content .row .price {
+  font-size: 25px;
+  font-weight: 600;
+  color: #ff7979;
+}
+@media (max-width: 500px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .titilo {
+    font-size: 100%;
+    margin: 40px 0 10px 0;
+  }
+  .wrapper .card img {
+    width: 382px;
+  }
+  .parent {
+    top: 0;
+    right: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero-g {
+    padding-top: 245px;
+    position: static;
+    /* object-fit: cover; */
+    background-position: center;
+    background-size: 57em;
+  }
+  .one,
+  .two,
+  .three {
+    width: 89%;
+  }
+}
+
+/* reservation */
+
+.header-r {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/dima-panyukov-7FmfKNniptM-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.text-r {
+  text-align: center;
+  color: #fff;
+  padding-top: 90px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.text-r span {
+  color: rgb(255, 64, 64);
+  text-transform: none;
+}
+.vehcle-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 50%;
+  background-color: rgba(253, 253, 253, 0.856);
+  padding: 30px;
+}
+.vehcle-option .input .date {
+  display: flex;
+}
+.vehcle-option .input .date div {
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+}
+.vehcle-option .input input {
+  background-color: transparent;
+  width: 100%;
+  resize: none;
+  padding: 5px 0;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+}
+.wtov {
+  display: flex;
+}
+.wtov select {
+  background-color: transparent;
+  width: 100%;
+  resize: none;
+  padding: 5px 0;
+  margin: 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+}
+.inputS input[type="submit"] {
+  width: fit-content;
+  padding: 10px;
+}
+#phone{
+  width: 500px;
+  display: flex;
+  margin-left: 10px;
+}

@@ -3,7 +3,6 @@
 //     alert("input");
 //   }
 document.querySelector("#send").addEventListener("click", function() {
-document.querySelectorAll("input").forEach(input => alert(`Value of ${input.name}: ${input.value}`));
+document.querySelectorAll("input").forEach(input => alert(`${input.name}: ${input.value}`));
 });
-//$ means value of the variable
     
