@@ -528,7 +528,21 @@ select:invalid {
 }
 
 /* reservation */
-
+@media (max-width: 700px){
+  .text-r {
+    font-size: 30px;
+  }
+  .selec {
+    flex-direction: column;
+  }
+  #phone{
+    width: 1px;
+  }
+  .vehcle-option{
+    display:block;
+    flex-direction: column;
+  }
+}
 .header-r {
   min-height: 100vh;
   width: 100%;
@@ -560,14 +574,7 @@ select:invalid {
   background-color: rgba(253, 253, 253, 0.856);
   padding: 30px;
 }
-.vehcle-option .input .date {
-  display: flex;
-}
-.vehcle-option .input .date div {
-  display: flex;
-  margin: 20px;
-  flex-direction: column;
-}
+
 .vehcle-option .input input {
   background-color: transparent;
   width: 100%;
@@ -579,13 +586,14 @@ select:invalid {
   outline: none;
   border-bottom: 1px solid #777;
 }
-.wtov {
+.selec {
   display: flex;
+  justify-content: space-around;
 }
 .wtov select {
   background-color: transparent;
   width: 100%;
-  resize: none;
+  /* resize: none; */
   padding: 5px 0;
   margin: 10px;
   font-size: 18px;
@@ -593,12 +601,23 @@ select:invalid {
   outline: none;
   border-bottom: 1px solid #777;
 }
-.inputS input[type="submit"] {
-  width: fit-content;
-  padding: 10px;
+
+.bt input[type="button"]{
+  outline: none;
+  padding: 10px 0;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #ff7979;
+  text-transform: uppercase;
+  border: 2px solid #ff7979;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
 }
-#phone{
-  width: 500px;
-  display: flex;
-  margin-left: 10px;
-}
+
+.bt input[type="button"]:hover{
+  color: #fff;
+  background: #ff7979;
+} 
