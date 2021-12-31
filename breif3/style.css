@@ -440,6 +440,38 @@ select:invalid {
   height: 250px;
   width: 400px;
 }
+.wrapper .card.imagee .hide{
+  display: none;
+}
+.wrapper .card .imagee .show{
+  display: block;
+}
+.items{
+  display: flex;
+  max-width: 720px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.items span{
+  padding: 7px 25px;
+  font-size:18px;
+  font-weight: 500;
+  color: #ff7979;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 2px solid #ff7979;
+  transition: all 0.3s ease;
+}
+.items .active,
+.items span:hover{
+color: #fff;
+background-color: #ff7979;
+}
+
 .wrapper .card:hover {
   box-shadow: 0 0 2px 1px #e4e4e480;
 }

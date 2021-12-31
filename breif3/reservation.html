@@ -141,8 +141,9 @@
 
 
     var carburant = 0;
-    var carb = document.getElementById("carburant").value;
     function chekCarburant() {
+      var carb = document.getElementById("carburant").value;
+      console.log(carb);
       switch (carb) {
         case "Essence": carburant = 0.14;
           break;
@@ -161,9 +162,9 @@
 
     }
 
-    var GearBox = 0;
-    var boite = document.getElementById("carburant").value;
+    var GearBox ="";
     function chekBoite() {
+      var boite = document.getElementById("carburant").value;
       switch (carb) {
         case "Manuelle": GearBox = 0;
           break;
@@ -171,9 +172,8 @@
         case "Automatique": GearBox = 0.19;
           break;
 
-
       }
-
+      
     }
 
     function calcul() {
