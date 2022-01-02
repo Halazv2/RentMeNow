@@ -18,7 +18,7 @@
 <body>
   <header class="nav-barrr">
     <nav>
-      <a class="logo" href="brief.html"><img src="images/logo.png" width="50 px" height="50 px" /></a>
+      <a class="logo" href="home.html"><img src="images/logo.png" width="50 px" height="50 px" /></a>
       <div class="nav-links">
         <ul>
           <li>
@@ -33,7 +33,8 @@
       </div>
     </nav>
   </header>
-  <section class="header-r">
+  <section class="header-r"> </section>
+  <section class="resrva">
     <div class="text-r">
       <h3>BOOK ONLINE FOR THE BEST RATE WITH <span>RentMeNow !</span> </h3>
     </div>
@@ -46,6 +47,11 @@
             <input type="text" id="fname" name="First name" placeholder="First Name" required /><br />
             <input type="text" id="lname" name="Last name" placeholder="Last Name" required /><br />
             <input type="email" name="email" placeholder="exemple@exmp.com" required />
+  <div class="slt Stl_nbrjr">
+              <input class="inp" type="text" name="nbrjr" id="Number_Of_Days" placeholder="Reservation duration" required minlength="1" maxlength="3"
+                size="10">
+
+            </div>
           </div>
           <div class="wtov">
             <div class="selec">
@@ -76,12 +82,6 @@
                 </select>
               </div>
             </div><br />
-            <div class="slt Stl_nbrjr">
-              <label>Reservation duration</label>
-              <input class="inp" type="text" name="nbrjr" id="Number_Of_Days" required minlength="1" maxlength="3"
-                size="10">
-
-            </div>
             <div class="slt Stl_totale">
               <div class="bt">
                 <input id="BottonCalculate" type="button" id="btn" value="confirmed">
@@ -95,6 +95,30 @@
       </div>
     </div>
   </section>
+  <footer>
+    <div class="left">
+    <div class="social-media">
+      <ul>
+        <li><i class="fab fa-facebook"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+      </ul>
+    </div>
+    <div>
+      <p>support@rentmenow@co</p>
+      <p>@2022| RentMeNow All Rights Reserved.</p>
+    </div>
+  </div>
+    <div class="subscribe">
+      <h3>Join Our newsletter</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aut!</p>
+      <div class="subscribe-form">
+        <i class="fas fa-envelope"></i>
+        <input type="email" class="tbox" placeholder="Enter you email">
+        <button type="button" class="botona" name="button">subscribe</button>
+      </div>
+    </div>
+  </footer>
   <script>
     var prix = 0;
     var totale = 0;

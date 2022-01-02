@@ -11,7 +11,7 @@
     //gallerie
 
     const filterItems = document.querySelector(".items");
-    const filterImg = document.querySelectorAll(".imagee");
+    const filterImg = document.querySelectorAll(".card");
 
     window.onload=()=>{ 
         filterItems.onclick =(selectedItem)=>{
@@ -21,15 +21,14 @@
                 selectedItem.target.classList.add("active");
                 let filterName =selectedItem.target.getAttribute("data-name");
                 // console.log(filterName);
-                filterImg.forEach((imagee)=>{
-                    let filterImages = imagee.getAttribute("data-name"); 
+                filterImg.forEach((card)=>{
+                    let filterImages = card.getAttribute("data-name"); 
                     // console.log(filterImages);
                     if((filterImages==filterName) || filterName =="all"){
-                        imagee.classList.add("show");
-                        imagee.classList.remove("hide");
+                        card.classList.add("show");
                     }else{
-                        imagee.classList.add("hide");
-                        imagee.classList.remove("show");
+                        card.classList.add("hide");
+                        card.classList.remove("show");
                     }
                 });
             }

@@ -44,7 +44,7 @@ nav {
   content: "";
   width: 0%;
   height: 2px;
-  background: #f44336;
+  background: #12212E;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -122,15 +122,21 @@ nav {
 .safty div > h3 {
   font-size: 60px;
   width: 100%;
-  color: #ff7979;
+  color: #000000;
   background-color: rgb(188 192 191 / 60%);
   text-align: center;
 }
 footer {
-  background-color: rgb(255, 255, 255);
+  background-color:#ffffff;
+  border-top: 4px solid #12212E;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+.left{
   text-align: center;
 }
-
 .social-media ul li i {
   width: 30px;
   height: 30px;
@@ -138,13 +144,13 @@ footer {
   /* margin-right: 5px; */
   border-radius: 50px;
   text-align: center;
-  align-items: center;
+  /* align-items: center; */
   font-size: 19px;
   background-color: #cac5c542;
   transition: all 0.3s ease;
 }
 .social-media ul li i:hover {
-  background: #d49292;
+  background: #12212E;
 }
 .social-media ul {
   list-style-type: none;
@@ -153,23 +159,48 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.subscribe{
+  text-align: center;
+}
+.subscribe-form {
+  /* border: 2px solid red; */
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.subscribe-form i {
+  background:#12212E;
+  color: #fff;
+  width: 40px;
+  line-height: 40px;
+}
+.tbox,.botona{
+  border: none;
+  outline: none;
+}
+.tbox{
+  width: 260px;
+  padding: 0 10px;
+
+}
+.botona{
+  background: #12212E;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 .comments {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: auto;
   /* border: 2px solid red; */
-  width: 50%;
+  width: 80%;
+  gap: 12px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 8px;
   margin-bottom: 16px;
-}
-.comments-img img {
-  border-radius: 50%;
-  height: 80px;
-  margin-bottom: 8px;
-  margin-top: 8px;
-  width: 80px;
 }
 .comments-header h1 {
   text-align: center;
@@ -177,10 +208,12 @@ footer {
   font-size: 45px;
 }
 .comments-container {
+  top: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center;
+  align-items: center; */
   padding: 10px;
   margin-bottom: 10px;
   background-color: rgba(238, 236, 236, 0.274);
@@ -199,7 +232,7 @@ footer {
 .comments-text > p {
   text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .Offers {
     display: block;
   }
@@ -262,6 +295,18 @@ footer {
     height: 100vh;
   }
   .comments {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    /* border: 2px solid red; */
+    /* width: 50%; */
+    gap: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 16px;
+  }
+  .comments {
     width: 80%;
     margin-bottom: 19px;
   }
@@ -272,6 +317,14 @@ footer {
   .trust-secion {
     flex-direction: column;
     height: 100%;
+  }
+  footer {
+    background-color:#ffffff;
+    border-top: 4px solid #12212E;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
   }
 }
 
@@ -293,7 +346,7 @@ footer {
 .container-contact {
   margin: 30px;
   padding: 30px;
-  background-color: rgba(238, 236, 236, 0.274);
+  background-color: rgba(253, 253, 253, 0.856);
   width: 70%;
   /* height: 10%; */
   display: block;
@@ -357,15 +410,15 @@ select:invalid {
   font-weight: 500;
   border-radius: 3px;
   background-color: #fff;
-  color: #ff7979;
+  color: #12212E;
   text-transform: uppercase;
-  border: 2px solid #ff7979;
+  border: 2px solid #12212E;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .inputS input[type="submit"]:hover {
   color: #fff;
-  background: #ff7979;
+  background: #12212E;
 }
 
 /* gallerie */
@@ -406,7 +459,7 @@ select:invalid {
 .fa-smile-wink,
 .fa-heart,
 .fa-car:before {
-  color: rgb(147, 180, 147);
+  color: rgb(18, 33, 46);
 }
 .parent h4 {
   color: black;
@@ -422,7 +475,7 @@ select:invalid {
 .titelmini {
   text-align: center;
   text-transform: uppercase;
-  background-color: #ff7979;
+  background-color: #12212E;
   color: #fff;
 }
 .wrapper {
@@ -440,10 +493,10 @@ select:invalid {
   height: 250px;
   width: 400px;
 }
-.wrapper .card.imagee .hide{
+.card.hide{
   display: none;
 }
-.wrapper .card .imagee .show{
+.card.show{
   display: block;
 }
 .items{
@@ -460,16 +513,16 @@ select:invalid {
   padding: 7px 25px;
   font-size:18px;
   font-weight: 500;
-  color: #ff7979;
+  color: #12212E;
   border-radius: 50px;
   cursor: pointer;
-  border: 2px solid #ff7979;
+  border: 2px solid #12212E;
   transition: all 0.3s ease;
 }
 .items .active,
 .items span:hover{
 color: #fff;
-background-color: #ff7979;
+background-color: #12212E;
 }
 
 .wrapper .card:hover {
@@ -506,22 +559,22 @@ background-color: #ff7979;
   font-weight: 500;
   border-radius: 3px;
   background-color: #fff;
-  color: #ff7979;
+  color: #12212E;
   text-transform: uppercase;
-  border: 2px solid #ff7979;
+  border: 2px solid #12212E;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button button:hover {
   color: #fff;
-  background: #ff7979;
+  background: #12212E;
 }
 .content .row .price {
   font-size: 25px;
   font-weight: 600;
-  color: #ff7979;
+  color: #12212E;
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -557,6 +610,14 @@ background-color: #ff7979;
   .three {
     width: 89%;
   }
+  .items{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 48%;
+    gap: 10px;
+    justify-content: space-between;
+  }
 }
 
 /* reservation */
@@ -579,14 +640,17 @@ background-color: #ff7979;
   min-height: 100vh;
   width: 100%;
   background-image: url(images/dima-panyukov-7FmfKNniptM-unsplash.jpg);
+  min-height: 70vh;
+  background-color: rgb(238, 238, 238);
   background-size: cover;
   background-position: center;
-  position: relative;
+  /* position: relative; */
 }
+
 .text-r {
   text-align: center;
-  color: #fff;
-  padding-top: 90px;
+  color: #12212E;
+  padding-top: 10px;
   padding-bottom: 10px;
   font-size: 30px;
   font-weight: 600;
@@ -596,20 +660,37 @@ background-color: #ff7979;
   color: rgb(255, 64, 64);
   text-transform: none;
 }
-.vehcle-option {
+.resrva{
+  margin: 30px 0 30px 0;
+}
+.vehcle-option{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
   margin: auto;
   width: 50%;
   background-color: rgba(253, 253, 253, 0.856);
   padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.vehcle-option:hover {
+  /* On mouse-over, add a deeper shadow */
+  box-shadow: 0 8px 16px 0 rgba(250, 250, 250, 0.432);
 }
 
-.vehcle-option .input input {
+.vehcle-option .input{
+justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.vehcle-option .input input,#Number_Of_Days {
+  
   background-color: transparent;
-  width: 100%;
+  width: 300px;
   resize: none;
   padding: 5px 0;
   margin: 10px;
@@ -635,15 +716,17 @@ background-color: #ff7979;
 }
 
 .bt input[type="button"]{
+  width: 30%;
   outline: none;
   padding: 10px 0;
   font-size: 17px;
+  margin-bottom: 10px;
   font-weight: 500;
   border-radius: 3px;
   background-color: #fff;
-  color: #ff7979;
+  color: #12212E;
   text-transform: uppercase;
-  border: 2px solid #ff7979;
+  border: 2px solid #12212E;
   cursor: pointer;
   transition: all 0.3s ease;
 
@@ -651,5 +734,9 @@ background-color: #ff7979;
 
 .bt input[type="button"]:hover{
   color: #fff;
-  background: #ff7979;
+  background: #12212E;
 } 
+@media (max-width :700px){
+  .bt input[type="button"] {
+    width: 100%;}
+}
