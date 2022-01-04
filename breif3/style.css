@@ -3,6 +3,9 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .header {
   min-height: 100vh;
@@ -44,7 +47,7 @@ nav {
   content: "";
   width: 0%;
   height: 2px;
-  background: #12212E;
+  background: #12212e;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -127,14 +130,14 @@ nav {
   text-align: center;
 }
 footer {
-  background-color:#ffffff;
-  border-top: 4px solid #12212E;
+  background-color: #ffffff;
+  border-top: 4px solid #12212e;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding: 10px;
 }
-.left{
+.left {
   text-align: center;
 }
 .social-media ul li i {
@@ -150,7 +153,7 @@ footer {
   transition: all 0.3s ease;
 }
 .social-media ul li i:hover {
-  background: #12212E;
+  background: #12212e;
 }
 .social-media ul {
   list-style-type: none;
@@ -159,7 +162,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.subscribe{
+.subscribe {
   text-align: center;
 }
 .subscribe-form {
@@ -169,22 +172,22 @@ footer {
   justify-content: center;
 }
 .subscribe-form i {
-  background:#12212E;
+  background: #12212e;
   color: #fff;
   width: 40px;
   line-height: 40px;
 }
-.tbox,.botona{
+.tbox,
+.botona {
   border: none;
   outline: none;
 }
-.tbox{
+.tbox {
   width: 260px;
   padding: 0 10px;
-
 }
-.botona{
-  background: #12212E;
+.botona {
+  background: #12212e;
   color: #fff;
   padding: 0 10px;
   text-transform: uppercase;
@@ -319,8 +322,8 @@ footer {
     height: 100%;
   }
   footer {
-    background-color:#ffffff;
-    border-top: 4px solid #12212E;
+    background-color: #ffffff;
+    border-top: 4px solid #12212e;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -347,7 +350,7 @@ footer {
   margin: 30px;
   padding: 30px;
   background-color: rgba(253, 253, 253, 0.856);
-  width: 70%;
+  width: 50%;
   /* height: 10%; */
   display: block;
 
@@ -361,6 +364,12 @@ footer {
   box-shadow: 0 8px 16px 0 rgba(250, 250, 250, 0.432);
 }
 
+.container-contact{
+  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 .container-contact .inputt3mar input {
   background-color: transparent;
   width: 100%;
@@ -410,15 +419,15 @@ select:invalid {
   font-weight: 500;
   border-radius: 3px;
   background-color: #fff;
-  color: #12212E;
+  color: #12212e;
   text-transform: uppercase;
-  border: 2px solid #12212E;
+  border: 2px solid #12212e;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .inputS input[type="submit"]:hover {
   color: #fff;
-  background: #12212E;
+  background: #12212e;
 }
 
 /* gallerie */
@@ -475,7 +484,7 @@ select:invalid {
 .titelmini {
   text-align: center;
   text-transform: uppercase;
-  background-color: #12212E;
+  background-color: #12212e;
   color: #fff;
 }
 .wrapper {
@@ -493,13 +502,13 @@ select:invalid {
   height: 250px;
   width: 400px;
 }
-.card.hide{
+.cardd.hide {
   display: none;
 }
-.card.show{
+.cardd.show {
   display: block;
 }
-.items{
+.items {
   display: flex;
   max-width: 720px;
   width: 100%;
@@ -509,20 +518,20 @@ select:invalid {
   margin-right: auto;
   justify-content: space-between;
 }
-.items span{
+.items span {
   padding: 7px 25px;
-  font-size:18px;
+  font-size: 18px;
   font-weight: 500;
-  color: #12212E;
+  color: #12212e;
   border-radius: 50px;
   cursor: pointer;
-  border: 2px solid #12212E;
+  border: 2px solid #12212e;
   transition: all 0.3s ease;
 }
 .items .active,
-.items span:hover{
-color: #fff;
-background-color: #12212E;
+.items span:hover {
+  color: #fff;
+  background-color: #12212e;
 }
 
 .wrapper .card:hover {
@@ -559,20 +568,20 @@ background-color: #12212E;
   font-weight: 500;
   border-radius: 3px;
   background-color: #fff;
-  color: #12212E;
+  color: #12212e;
   text-transform: uppercase;
-  border: 2px solid #12212E;
+  border: 2px solid #12212e;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button button:hover {
   color: #fff;
-  background: #12212E;
+  background: #12212e;
 }
 .content .row .price {
   font-size: 25px;
   font-weight: 600;
-  color: #12212E;
+  color: #12212e;
 }
 @media (max-width: 700px) {
   .wrapper {
@@ -610,7 +619,7 @@ background-color: #12212E;
   .three {
     width: 89%;
   }
-  .items{
+  .items {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -618,21 +627,25 @@ background-color: #12212E;
     gap: 10px;
     justify-content: space-between;
   }
+.container-contact {
+    width: 73%;
+}
 }
 
+
 /* reservation */
-@media (max-width: 700px){
+@media (max-width: 700px) {
   .text-r {
     font-size: 30px;
   }
   .selec {
     flex-direction: column;
   }
-  #phone{
-    width: 1px;
+  #phone {
+    width: 100%;
   }
-  .vehcle-option{
-    display:block;
+  .vehcle-option {
+    display: block;
     flex-direction: column;
   }
 }
@@ -649,7 +662,7 @@ background-color: #12212E;
 
 .text-r {
   text-align: center;
-  color: #12212E;
+  color: #12212e;
   padding-top: 10px;
   padding-bottom: 10px;
   font-size: 30px;
@@ -660,15 +673,15 @@ background-color: #12212E;
   color: rgb(255, 64, 64);
   text-transform: none;
 }
-.resrva{
+.resrva {
   margin: 30px 0 30px 0;
 }
-.vehcle-option{
+.vehcle-option {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   margin: auto;
   width: 50%;
   background-color: rgba(253, 253, 253, 0.856);
@@ -681,16 +694,16 @@ background-color: #12212E;
   box-shadow: 0 8px 16px 0 rgba(250, 250, 250, 0.432);
 }
 
-.vehcle-option .input{
-justify-content: center;
+.vehcle-option .input {
+  justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.vehcle-option .input input,#Number_Of_Days {
-  
+.vehcle-option .input input,
+#Number_Of_Days {
   background-color: transparent;
-  width: 300px;
+  width: 280px;
   resize: none;
   padding: 5px 0;
   margin: 10px;
@@ -714,9 +727,16 @@ justify-content: center;
   outline: none;
   border-bottom: 1px solid #777;
 }
-
-.bt input[type="button"]{
-  width: 30%;
+#botonaa {
+  margin-top: 18px;
+}
+.bt2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bt2 input[type="button"] {
+  width: 119px;
   outline: none;
   padding: 10px 0;
   font-size: 17px;
@@ -724,19 +744,50 @@ justify-content: center;
   font-weight: 500;
   border-radius: 3px;
   background-color: #fff;
-  color: #12212E;
+  color: #12212e;
   text-transform: uppercase;
-  border: 2px solid #12212E;
+  border: 2px solid #12212e;
   cursor: pointer;
   transition: all 0.3s ease;
-
+}
+.bt2 input[type="button"]:hover {
+  color: #fff;
+  background: #12212e;
+}
+.swal2-styled.swal2-confirm {
+  background-color: #12212e !important;
+}
+.swal2-icon.swal2-success [class^="swal2-success-line"] {
+  background-color: #12212e !important;
+}
+.swal2-icon.swal2-success .swal2-success-ring {
+  border-color:#12212e  !important;
+}
+.bt input[type="button"] {
+  width: 19%;
+  outline: none;
+  padding: 10px 0;
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #12212e;
+  text-transform: uppercase;
+  border: 2px solid #12212e;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
-.bt input[type="button"]:hover{
+.bt input[type="button"]:hover {
   color: #fff;
-  background: #12212E;
-} 
-@media (max-width :700px){
+  background: #12212e;
+}
+@media (max-width: 700px) {
   .bt input[type="button"] {
-    width: 100%;}
+    width: 100%;
+  }
+  .vehcle-option {
+    width: 73%;
+  }
 }

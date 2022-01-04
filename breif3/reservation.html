@@ -57,7 +57,7 @@
             <div class="selec">
               <div class="slt Stl_vehicle">
                 <label>Vehicle<label><br>
-                    <select class="inp" id="vehicle" onchange="CheckTypevehicle()">
+                    <select class="inp" id="vehicle" onchange="CheckTypevehicle()" required>
                       <option value="" disabled selected hidden>vehcle type</option>
                       <option value="Moto"> Moto</option>
                       <option value="Citadine"> Citadine</option>
@@ -72,23 +72,27 @@
               <div class="slt Stl_boite_av">
                 <label>Boite a vitesse</label>
                 <select class="inp" id="boite_av" onchange="chekBoite()">
-                  <option>choice a option</option>
+                  <option value="" disabled selected hidden>choice a option</option>
                 </select>
               </div>
               <div class="slt Stl_carburant">
                 <label>Carburant</label>
                 <select class="inp" id="carburant" onchange="chekCarburant()">
-                  <option>choice a carburant</option>
+                  <option value="" disabled selected hidden>choice a carburant</option>
                 </select>
               </div>
             </div><br />
             <div class="slt Stl_totale">
               <div class="bt">
-                <input id="BottonCalculate" type="button" id="btn" value="confirmed">
+                <input id="BottonCalculate" type="button" id="btn" value="calculate">
               </div>
               <label>Totale d'estimation</label>
               <input class="inp" type="text" disabled value="" id="Total_Amount" placeholder="Total:" />
             </div>
+            <div class="bt2">
+              <input id="botonaa" type="button" id="btn" value="confirmed">
+            </div>
+
           </div>
 
         </div>
@@ -119,97 +123,21 @@
       </div>
     </div>
   </footer>
-  <script>
-    var prix = 0;
-    var totale = 0;
-    function CheckTypevehicle() {
+<script src="js2.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- <script>
+  let confirmed = document.getElementById("botonaa");
+  confirmed.addEventListener("click", function () {
+    Swal.fire(
+        'Success!',
+        'You reserved the vihucle!<br/>type: ' + Choix.value +
+        '<br/> Fuel:' + carb +
+        '<br/>Totale:' +total,
+        'success'
+    )
 
-      var Choix = document.getElementById("vehicle").value;
-      switch (Choix) {
-        case "Citadine": document.getElementById("boite_av").innerHTML = "<option> Manuelle</option>";
-          document.getElementById("carburant").innerHTML = "<option> Essence</option> <option> Diesel</option> <option> Electrique</option> <option> Hybride</option>";
-          prix = 12;
-
-          break;
-        case "Compact": document.getElementById("boite_av").innerHTML = "<option> Manuelle</option>";
-          document.getElementById("carburant").innerHTML = "<option> Essence</option> <option> Diesel</option>  <option> Hybride</option>";
-          prix = 14;
-          break;
-
-        case "Utilitaire": document.getElementById("boite_av").innerHTML = "<option> Manuelle</option>";
-          document.getElementById("carburant").innerHTML = " <option> Diesel</option>  ";
-          prix = 16;
-          break;
-
-        case "Engin de chantier": document.getElementById("boite_av").innerHTML = "<option> Manuelle</option>";
-          document.getElementById("carburant").innerHTML = "<option> Essence</option> <option> Diesel</option> ";
-          prix = 900;
-          break;
-
-        case "Berline": document.getElementById("boite_av").innerHTML = "<option> Automatique</option>";
-          document.getElementById("carburant").innerHTML = "<option> Essence</option> <option> Diesel</option>  <option> Hybride</option>";
-          prix = 20;
-          break;
-
-        case "Camion": document.getElementById("boite_av").innerHTML = "<option> Automatique</option>";
-          document.getElementById("carburant").innerHTML = " <option> Diesel</option> ";
-          prix = 250;
-          break;
-        case "Moto":
-          document.getElementById("carburant").innerHTML = " <option> Essence</option> <option> Electrique</option> ";
-          prix = 10;
-          break;
-      }
-
-    }
-
-
-    var carburant = 0;
-    function chekCarburant() {
-      var carb = document.getElementById("carburant").value;
-      console.log(carb);
-      switch (carb) {
-        case "Essence": carburant = 0.14;
-          break;
-
-        case "Hybride": carburant = 0.09;
-          break;
-
-        case "Diesel": carburant = 0.21;
-          break;
-
-        case "Electrique": carburant = 0.05;
-          break;
-
-
-      }
-
-    }
-
-    var GearBox ="";
-    function chekBoite() {
-      var boite = document.getElementById("carburant").value;
-      switch (carb) {
-        case "Manuelle": GearBox = 0;
-          break;
-
-        case "Automatique": GearBox = 0.19;
-          break;
-
-      }
-      
-    }
-
-    function calcul() {
-      var n = document.getElementById("Number_Of_Days").value;
-      totale = n * (prix + (prix * carburant) + (prix * GearBox)) + " €";
-      document.getElementById("Total_Amount").value = totale;
-    }
-
-    document.getElementById("BottonCalculate").addEventListener("click", calcul);
-
-
-  </script>
+  })
+</script> -->
 </body>
 
 </html>

@@ -1,36 +1,37 @@
-// document.querySelectorAll("input").forEach(input => console.log(input.value))
-// function myFunction() {
-//     alert("input");
-//   }
-// document.querySelector("#send").addEventListener("click", function() {
-// document.querySelectorAll("input").forEach(input => alert(`${input.name}: ${input.value}`));
+// document.querySelector(".form").addEventListener("submit", function () {
+//   document
+//     .querySelectorAll("input")
+//     .forEach((input) => alert(`${input.name}: ${input.value}`));
 // });
-    
 
+// document.querySelector(".form").addEventListener("submit", function modal() {
+//   var name = document.querySelector("#fname").value;
+//   var lname = document.querySelector("#lname").value;
+//   var email = document.querySelector("#email").value;
+//   var phone = document.querySelector("#phone").value;
+//   var message = document.querySelector("#message").value;
 
-    //gallerie
+//   alert("Name : " + name+ "\nFirst: "+lname+ "\nmail : " + email + "\nPhone Number : " + phone+"\nMessage: "+message);
+// });
 
-    const filterItems = document.querySelector(".items");
-    const filterImg = document.querySelectorAll(".card");
-
-    window.onload=()=>{ 
-        filterItems.onclick =(selectedItem)=>{
-            if(selectedItem.target.classList.contains("item")){
-                // console.log("true");
-                filterItems.querySelector(".active").classList.remove("active");
-                selectedItem.target.classList.add("active");
-                let filterName =selectedItem.target.getAttribute("data-name");
-                // console.log(filterName);
-                filterImg.forEach((card)=>{
-                    let filterImages = card.getAttribute("data-name"); 
-                    // console.log(filterImages);
-                    if((filterImages==filterName) || filterName =="all"){
-                        card.classList.add("show");
-                    }else{
-                        card.classList.add("hide");
-                        card.classList.remove("show");
-                    }
-                });
-            }
-        }
-    }
+document.querySelector(".form").addEventListener("submit", function modal() {
+  var name = document.querySelector("#fname").value;
+  var lname = document.querySelector("#lname").value;
+  var email = document.querySelector("#email").value;
+  var phone = document.querySelector("#phone").value;
+  var message = document.querySelector("#message").value;
+  Swal.fire(
+    "Success!",
+    "Name : " +
+      name +
+      "\nFirst: " +
+      lname +
+      "\nmail : " +
+      email +
+      "\nPhone Number : " +
+      phone +
+      "\nMessage: " +
+      message,
+    "success"
+  );
+});
